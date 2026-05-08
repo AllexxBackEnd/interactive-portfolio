@@ -34,6 +34,21 @@ const projects: Project[] = [
     screenshots: ['/screenshot-portfolio.jpg'],
   },
   {
+    slug: 'courses-bot',
+    title: 'Бот-каталог курсов с оплатой Stars',
+    category: 'telegram-bot',
+    description: 'Telegram-бот для продажи курсов: каталог, оплата Stars, прогресс по урокам и сертификат',
+    task: 'Продавать обучающий контент через Telegram без сайта и эквайринга. Telegram Stars убирают необходимость в платёжной системе — пользователь платит прямо в чате. Нужен каталог с фильтрами по направлениям, бесплатным превью и закрытым контентом после покупки.',
+    solution: 'Шесть курсов по Backend, Frontend, Telegram-ботам и DevOps. Каждый разбит на уроки с примерами кода. Первый урок открыт бесплатно: читаешь до покупки. Оплата через Telegram Stars — без перехода на сайт, без ввода карты. Бот отслеживает прогресс по каждому уроку и выдаёт сертификат с уникальным кодом после финального урока. Aiogram 3 c FSM, SQLAlchemy + PostgreSQL хранят пользователей, покупки и прогресс. Деплой на Railway.',
+    stack: ['Python', 'Aiogram 3', 'PostgreSQL', 'SQLAlchemy', 'Telegram Stars', 'Railway'],
+    result: 'Полный цикл — от просмотра каталога до получения сертификата — без выхода из Telegram. Не нужен сайт, эквайринг или отдельная платёжная форма.',
+    metrics: [
+      { value: '6',      label: 'курсов по четырём направлениям' },
+      { value: 'Stars',  label: 'оплата без эквайринга'          },
+      { value: 'CERT',   label: 'сертификат с кодом по итогу'    },
+    ],
+  },
+  {
     slug: 'crm-telegram-bot',
     title: 'CRM-бот для beauty-студии',
     category: 'telegram-bot',
