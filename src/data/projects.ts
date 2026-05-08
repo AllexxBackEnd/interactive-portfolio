@@ -31,6 +31,7 @@ const projects: Project[] = [
       { value: 'SSE',      label: 'чат без перезагрузки'    },
       { value: 'Telegram', label: 'уведомления о заявках'   },
     ],
+    screenshots: ['/screenshot-portfolio.jpg'],
   },
   {
     slug: 'crm-telegram-bot',
